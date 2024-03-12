@@ -1,8 +1,6 @@
-export const QuizData: {
-  question: string;
-  options: string[];
-  correctOption: number;
-}[] = [
+import { QuizProps } from "../Components/QuizApp";
+
+export const QuizData: QuizProps[] = [
   {
     question: " What is capital of France",
     options: ["Paris", "London", " Berlin", "Madrid"],

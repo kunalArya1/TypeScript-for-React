@@ -1,12 +1,14 @@
-type QuizProps = {
-  prop1: {
-    question: string;
-    options: string[];
-    correctOption: number;
-  };
+export type QuizProps = {
+  question: string;
+  options: string[];
+  correctOption: number;
 };
 
-const QuizComponent: React.FC<QuizProps> = ({ prop1 }) => {
+type quizPorps1 = {
+  prop1: QuizProps;
+};
+
+const QuizComponent: React.FC<quizPorps1> = ({ prop1 }) => {
   return (
     <div className=" text-center mt-5 ">
       <h1 className=" font-bold text-2xl mb-3">{prop1.question}</h1>

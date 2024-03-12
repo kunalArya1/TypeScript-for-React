@@ -6,8 +6,10 @@ interface ScoreProps {
 export const Score: React.FC<ScoreProps> = ({ currentScore, totalScore }) => {
   return (
     <>
-      <p>{currentScore}</p>
-      <p>{totalScore}</p>
+      <div className=" text-center">
+        <p>{currentScore}</p>
+        <p>{totalScore}</p>
+      </div>
     </>
   );
 };
